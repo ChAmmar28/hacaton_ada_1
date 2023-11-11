@@ -18,36 +18,49 @@ $main-color-5: #ab857c;
 }
 //main
 main {
-  .label-box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .skill-label {
+  .section {
+    .h-text {
+      margin-left: 5%;
       display: flex;
-      margin-top: 30px;
-      .label-icon {
-        margin-right: 8px;
-
-        i {
-          font-size: 35px;
-          color: $main-color-5;
-        }
+      h3 {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        border-bottom: $main-color-5 2px solid;
       }
-      .label-text {
-        width: 500px;
-        h4 {
-          font-family: "Inter", sans-serif;
-          font-size: 19px;
-          font-style: normal;
-          font-weight: 500;
+    }
+    .label-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .skill-label {
+        display: flex;
+        margin-top: 30px;
+        .label-icon {
+          margin-right: 8px;
+          i {
+            font-size: 35px;
+            color: $main-color-5;
+          }
         }
-        p {
-          color: $main-color-4;
-          font-family: "Noto Sans";
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 17px;
+        .label-text {
+          width: 500px;
+          h4 {
+            font-family: "Inter", sans-serif;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          p {
+            color: $main-color-4;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+          }
         }
       }
     }

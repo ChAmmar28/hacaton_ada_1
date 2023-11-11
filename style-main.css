@@ -4,34 +4,46 @@
   box-sizing: border-box;
 }
 
-main .label-box {
+main .section .h-text {
+  margin-left: 5%;
+  display: flex;
+}
+main .section .h-text h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: #ab857c 2px solid;
+}
+main .section .label-box {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-main .label-box .skill-label {
+main .section .label-box .skill-label {
   display: flex;
   margin-top: 30px;
 }
-main .label-box .skill-label .label-icon {
+main .section .label-box .skill-label .label-icon {
   margin-right: 8px;
 }
-main .label-box .skill-label .label-icon i {
+main .section .label-box .skill-label .label-icon i {
   font-size: 35px;
   color: #ab857c;
 }
-main .label-box .skill-label .label-text {
+main .section .label-box .skill-label .label-text {
   width: 500px;
 }
-main .label-box .skill-label .label-text h4 {
+main .section .label-box .skill-label .label-text h4 {
   font-family: "Inter", sans-serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 500;
 }
-main .label-box .skill-label .label-text p {
+main .section .label-box .skill-label .label-text p {
   color: #6b6b6b;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
