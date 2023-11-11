@@ -14,4 +14,11 @@ $main-color-3: #fff;
   padding: 0;
   box-sizing: border-box;
 }
-//
+//main
+main {
+  .label-box {
+    .skill-label {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main .label-box .skill-label {
+  display: flex;
+}/*# sourceMappingURL=style-main.css.map */
