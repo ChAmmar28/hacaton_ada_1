@@ -2,6 +2,8 @@
 $main-color-1: #bfa08b;
 $main-color-2: #000;
 $main-color-3: #fff;
+$main-color-4: #6b6b6b;
+$main-color-5: #ab857c;
 //
 
 // custom colors:
@@ -17,8 +19,37 @@ $main-color-3: #fff;
 //main
 main {
   .label-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     .skill-label {
       display: flex;
+      margin-top: 30px;
+      .label-icon {
+        margin-right: 8px;
+
+        i {
+          font-size: 35px;
+          color: $main-color-5;
+        }
+      }
+      .label-text {
+        width: 500px;
+        h4 {
+          font-family: "Inter", sans-serif;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 500;
+        }
+        p {
+          color: $main-color-4;
+          font-family: "Noto Sans";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 17px;
+        }
+      }
     }
   }
 }
