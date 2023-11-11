@@ -199,11 +199,11 @@ main .h-text h3 {
 main .h-text h3 span {
   font-weight: 500;
 }
-main .section {
+main .section-label-box {
   width: 100%;
   padding: 1% 0;
 }
-main .section .label-box {
+main .section-label-box .label-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -211,26 +211,26 @@ main .section .label-box {
   overflow: hidden;
   padding: 0 5%;
 }
-main .section .label-box .skill-label {
+main .section-label-box .label-box .skill-label {
   display: flex;
   margin-top: 30px;
   width: 550px;
 }
-main .section .label-box .skill-label .label-icon {
+main .section-label-box .label-box .skill-label .label-icon {
   margin-right: 8px;
 }
-main .section .label-box .skill-label .label-icon i {
+main .section-label-box .label-box .skill-label .label-icon i {
   font-size: 35px;
   color: #ab857c;
 }
-main .section .label-box .skill-label .label-text h4 {
+main .section-label-box .label-box .skill-label .label-text h4 {
   font-family: "Inter", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 1px;
 }
-main .section .label-box .skill-label .label-text p {
+main .section-label-box .label-box .skill-label .label-text p {
   color: #6b6b6b;
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
