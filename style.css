@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: rgba(197, 158, 149, 0.7215686275);
+}
+
+.footerConteiner {
+  width: 100;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  opacity: 0.9;
+}
+
+/*Hover Effects on Social Media Icons*/
+.socialIcons a:hover {
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ol {
+  display: flex;
+  justify-content: center;
+  list-style-type: nondisc;
+}
+
+.footerNav ol li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer ol li a:hover {
+  opacity: 1;
+}
+
+.footerBotton {
+  background-color: #ab857c;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBotton p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-widtch: 700px) {
+  .footerNav {
+    flex-direction: column;
+  }
+  .footer ol li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
