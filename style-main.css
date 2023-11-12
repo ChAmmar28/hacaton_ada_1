@@ -45,7 +45,7 @@ header .head .head-nav {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-right: 1%;
+  margin-right: 5%;
 }
 header .head .head-nav a {
   font-family: "Noto Sans", sans-serif;
@@ -194,7 +194,7 @@ main .home-screen-box .tag-box .tag p {
 }
 main .h-text {
   display: flex;
-  padding: 2% 5% 3%;
+  padding: 1.5% 5% 0;
 }
 main .h-text h3 {
   font-family: "Noto Sans", sans-serif;
@@ -220,7 +220,7 @@ main .section-label-box .label-box {
 }
 main .section-label-box .label-box .skill-label {
   display: flex;
-  margin-top: 30px;
+  margin-top: 8%;
   width: 550px;
 }
 main .section-label-box .label-box .skill-label .label-icon {
@@ -251,7 +251,8 @@ main .section-about-box {
 }
 main .section-about-box .h-text-about {
   display: flex;
-  padding: 2% 0 3%;
+  margin-top: 4%;
+  padding: 1% 0;
 }
 main .section-about-box .h-text-about h3 {
   font-family: "Noto Sans", sans-serif;
@@ -272,10 +273,11 @@ main .section-about-box .about-info .about-bio .left-bio-text {
 }
 main .section-about-box .about-info .about-bio .left-bio-text div {
   width: 100%;
-  background-color: #c59e95;
+  background-color: #bfa08b;
   padding: 30px 30px;
   border-radius: 4px;
-  box-shadow: 0px 8px 8px #9d9d9d;
+  box-shadow: 0px 3px 9px #c6c6c6;
+  opacity: 0.95;
 }
 main .section-about-box .about-info .about-bio .left-bio-text div h6 {
   font-family: "Noto Sans", sans-serif;
@@ -290,7 +292,7 @@ main .section-about-box .about-info .about-bio .left-bio-text div p {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 19px;
   letter-spacing: 1px;
 }
 main .section-about-box .about-info .about-bio .right-bio-text {
@@ -298,10 +300,11 @@ main .section-about-box .about-info .about-bio .right-bio-text {
 }
 main .section-about-box .about-info .about-bio .right-bio-text div {
   width: 100%;
-  background-color: #c59e95;
+  background-color: #bfa08b;
   padding: 30px 30px;
   border-radius: 4px;
-  box-shadow: 0px 8px 8px #9d9d9d;
+  box-shadow: 0px 3px 9px #c6c6c6;
+  opacity: 0.95;
 }
 main .section-about-box .about-info .about-bio .right-bio-text div h6 {
   font-family: "Noto Sans", sans-serif;
@@ -316,6 +319,56 @@ main .section-about-box .about-info .about-bio .right-bio-text div p {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 19px;
   letter-spacing: 1px;
+}
+main .section-about-box .about-info .about-gallery {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+main .section-about-box .about-info .about-gallery div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  width: 31%;
+  height: 250px;
+  justify-content: end;
+  align-items: end;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px #9d9d9d;
+  transition: 0.5s;
+}
+main .section-about-box .about-info .about-gallery div p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+  padding: 0 10px 4px;
+  background-color: #bfa08b;
+  border-top: #ab857c 2px solid;
+  border-left: #ab857c 2px solid;
+  border-bottom: #ab857c 2px solid;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: 0.5s;
+}
+main .section-about-box .about-info .about-gallery div:hover > p {
+  display: block;
+  font-size: 25px;
+}
+main .section-about-box .about-info .about-gallery div:first-child {
+  background-image: url(./images/AGI.png);
+}
+main .section-about-box .about-info .about-gallery div:nth-child(2) {
+  background-image: url(./images/AGIs2.png);
+}
+main .section-about-box .about-info .about-gallery div:last-child {
+  background-image: url(./images/AGIs3.png);
 }/*# sourceMappingURL=style-main.css.map */

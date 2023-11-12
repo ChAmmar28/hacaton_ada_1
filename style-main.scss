@@ -11,12 +11,10 @@ $main-color-9: #4e4e4e;
 $main-color-10: #72000f;
 $main-color-11: #c59e95;
 $main-color-12: #9d9d9d;
-//
-
+$main-color-13: #c59e95b8; //
+$main-color-14: #c6c6c6;
 // custom colors:
-
 //
-
 // default style
 * {
   margin: 0;
@@ -64,7 +62,7 @@ header {
       display: flex;
       justify-content: space-evenly;
       text-align: center;
-      margin-right: 1%;
+      margin-right: 5%;
       a {
         font-family: "Noto Sans", sans-serif;
         font-size: 25px;
@@ -224,7 +222,7 @@ main {
   }
   .h-text {
     display: flex;
-    padding: 2% 5% 3%;
+    padding: 1.5% 5% 0;
     h3 {
       font-family: "Noto Sans", sans-serif;
       font-size: 30px;
@@ -249,7 +247,7 @@ main {
 
       .skill-label {
         display: flex;
-        margin-top: 30px;
+        margin-top: 8%;
         width: 550px;
         .label-icon {
           margin-right: 8px;
@@ -283,7 +281,8 @@ main {
     padding: 4% 5%;
     .h-text-about {
       display: flex;
-      padding: 2% 0 3%;
+      margin-top: 4%;
+      padding: 1% 0;
       h3 {
         font-family: "Noto Sans", sans-serif;
         font-size: 30px;
@@ -303,10 +302,11 @@ main {
           width: 58%;
           div {
             width: 100%;
-            background-color: $main-color-11;
+            background-color: $main-color-1;
             padding: 30px 30px;
             border-radius: 4px;
-            box-shadow: 0px 8px 8px $main-color-12;
+            box-shadow: 0px 3px 9px $main-color-14;
+            opacity: 0.95;
             h6 {
               font-family: "Noto Sans", sans-serif;
               font-size: 27px;
@@ -320,7 +320,7 @@ main {
               font-size: 16px;
               font-style: normal;
               font-weight: 300;
-              line-height: 16px;
+              line-height: 19px;
               letter-spacing: 1px;
             }
           }
@@ -329,10 +329,11 @@ main {
           width: 38%;
           div {
             width: 100%;
-            background-color: $main-color-11;
+            background-color: $main-color-1;
             padding: 30px 30px;
             border-radius: 4px;
-            box-shadow: 0px 8px 8px $main-color-12;
+            box-shadow: 0px 3px 9px $main-color-14;
+            opacity: 0.95;
             h6 {
               font-family: "Noto Sans", sans-serif;
               font-size: 27px;
@@ -346,10 +347,60 @@ main {
               font-size: 16px;
               font-style: normal;
               font-weight: 300;
-              line-height: 16px;
+              line-height: 19px;
               letter-spacing: 1px;
             }
           }
+        }
+      }
+      .about-gallery {
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        div {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          display: flex;
+          width: 31%;
+          height: 250px;
+          justify-content: end;
+          align-items: end;
+          border-radius: 4px;
+          box-shadow: 0px 4px 10px $main-color-12;
+          transition: 0.5s;
+          p {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 0;
+            font-style: normal;
+            font-weight: 500;
+            text-decoration: none;
+            color: $main-color-3;
+            letter-spacing: 1px;
+            margin: 0 0 5px;
+            padding: 0 10px 4px;
+            background-color: $main-color-1;
+            border-top: $main-color-5 2px solid;
+            border-left: $main-color-5 2px solid;
+            border-bottom: $main-color-5 2px solid;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            transition: 0.5s;
+          }
+          &:hover > p {
+            display: block;
+            font-size: 25px;
+          }
+        }
+        div:first-child {
+          background-image: url(./images/AGI.png);
+        }
+        div:nth-child(2) {
+          background-image: url(./images/AGIs2.png);
+        }
+        div:last-child {
+          background-image: url(./images/AGIs3.png);
         }
       }
     }
