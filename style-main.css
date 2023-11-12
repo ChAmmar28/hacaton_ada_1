@@ -100,6 +100,9 @@ header .head .head-right-info .head-right-info-nav a:hover {
 header .head .head-right-info .head-right-info-nav a:active {
   color: #000;
 }
+header .head .burger {
+  display: none;
+}
 
 main .home-screen-box .frame {
   padding: 4% 5%;
@@ -115,6 +118,7 @@ main .home-screen-box .frame .moded-img {
 main .home-screen-box .frame .moded-img .img {
   width: 93.5%;
   height: 95%;
+  border-radius: 4px;
   background-image: url(./images/hs-img.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -128,6 +132,7 @@ main .home-screen-box .frame .moded-img .sqeare-border {
   position: absolute;
   width: 93.5%;
   height: 95%;
+  border-radius: 4px;
   border: 3px solid #ab857c;
   bottom: 0;
   left: 0;
@@ -377,6 +382,8 @@ main .section-portfolio-box {
   overflow: hidden;
 }
 main .section-portfolio-box .section-portfolio {
+  flex-direction: column;
+  align-items: center;
   margin: 4% 0 1%;
 }
 main .section-portfolio-box .section-portfolio .work-givers {
@@ -385,21 +392,24 @@ main .section-portfolio-box .section-portfolio .work-givers {
   margin-bottom: 4%;
 }
 main .section-portfolio-box .section-portfolio .work-givers img {
-  max-width: 700px;
+  width: 90%;
 }
 main .section-portfolio-box .section-portfolio .works {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3% 0;
+  padding: 5%;
+  width: 90%;
 }
 main .section-portfolio-box .section-portfolio .works img {
-  height: 300px;
-  width: 650px;
+  height: 100%;
+  width: 100%;
   border-radius: 4px;
 }
 main .section-portfolio-box .section-portfolio .works .work-text {
-  width: 400px;
+  width: 100%;
+  margin: 0 5%;
 }
 main .section-portfolio-box .section-portfolio .works .work-text h6 {
   font-family: "Inter", sans-serif;
@@ -418,4 +428,178 @@ main .section-portfolio-box .section-portfolio .works .work-text p {
   text-decoration: none;
   color: #353535;
   letter-spacing: 1px;
+}
+main .section-portfolio-box .section-portfolio .works:nth-child(3) {
+  flex-direction: row;
+}
+
+@media all and (max-width: 1220px) {
+  header .head .head-left-info .cool-text {
+    display: none;
+  }
+  header .head .head-nav {
+    margin-right: 0;
+  }
+  header .head .head-nav a {
+    margin: 0 8px;
+  }
+  header .head .head-right-info div a {
+    display: none;
+  }
+  header .head .head-right-info .head-right-info-nav a {
+    font-size: 20px;
+  }
+  main .section-label-box .label-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .section-label-box .label-box .skill-label {
+    margin-top: 3%;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text {
+    width: 59%;
+    height: 100%;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text div p {
+    line-height: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text {
+    width: 39%;
+    height: 100%;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text div p {
+    line-height: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main .section-about-box .about-info .about-gallery {
+    margin-top: 2%;
+  }
+  main .section-about-box .about-info .about-gallery div {
+    height: 200px;
+    width: 32%;
+  }
+}
+@media all and (max-width: 1180px) {
+  main .section-portfolio-box .section-portfolio .works .work-text p {
+    letter-spacing: 0px;
+    font-size: 16px;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text {
+    width: 59%;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text div p {
+    line-height: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text {
+    width: 39%;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text div p {
+    line-height: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 1180px) {
+  main .section-portfolio-box .section-portfolio .works .work-text p {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 1070px) {
+  main .section-portfolio-box .section-portfolio .works .work-text h6 {
+    font-size: 15px;
+  }
+  main .section-portfolio-box .section-portfolio .works .work-text p {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 775px) {
+  main .home-screen-box .frame .frame-text h3 {
+    font-size: 20px;
+  }
+  main .home-screen-box .frame .frame-text h2 {
+    font-size: 38px;
+    margin: 4px 0 2px;
+  }
+  main .home-screen-box .frame .frame-text p {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 375px) {
+  header .head .head-left-info img {
+    margin: 2% 0 2% -8%;
+  }
+  header .head .head-nav {
+    display: none;
+    margin-right: 0;
+  }
+  header .head .head-nav a {
+    margin: 0 8px;
+  }
+  header .head .head-right-info .head-right-info-nav a {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  header .head .burger {
+    display: block;
+  }
+  header .head .burger i {
+    font-size: 27px;
+    color: #353535;
+  }
+  main .home-screen-box .frame {
+    flex-wrap: wrap-reverse;
+  }
+  main .home-screen-box .frame .frame-text {
+    margin: 5% 0;
+    width: 100%;
+  }
+  main .home-screen-box .tag-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .home-screen-box .tag-box .tag {
+    width: 90%;
+  }
+  main .home-screen-box .tag-box .tag p {
+    letter-spacing: 0;
+    font-size: 11px;
+  }
+  main .section-label-box .label-box .skill-label {
+    width: 90%;
+  }
+  main .section-about-box .about-info .about-bio {
+    flex-direction: column;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text {
+    margin-top: 5%;
+    width: 100%;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text {
+    margin-top: 5%;
+    width: 100%;
+  }
+  main .section-about-box .about-info .about-gallery {
+    margin-top: 5%;
+  }
+  main .section-about-box .about-info .about-gallery div:hover > p {
+    font-size: 15px;
+  }
+  main .section-portfolio-box .section-portfolio .works {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  main .section-portfolio-box .section-portfolio .works h6 {
+    margin-top: 10%;
+  }
+  main .section-portfolio-box .section-portfolio .works:nth-child(3) {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style-main.css.map */
