@@ -86,6 +86,9 @@ header .head .head-right-info div a {
 header .head .head-right-info div a:hover {
   color: #a33241;
 }
+header .head .head-right-info div a:active {
+  color: #72000f;
+}
 header .head .head-right-info .head-right-info-nav a {
   font-size: 14px;
   color: #6b6b6b;
@@ -93,6 +96,9 @@ header .head .head-right-info .head-right-info-nav a {
 }
 header .head .head-right-info .head-right-info-nav a:hover {
   color: #353535;
+}
+header .head .head-right-info .head-right-info-nav a:active {
+  color: #000;
 }
 
 main .home-screen-box .frame {

@@ -8,6 +8,7 @@ $main-color-6: #353535;
 $main-color-7: #a33241;
 $main-color-8: #ac5b66;
 $main-color-9: #4e4e4e;
+$main-color-10: #72000f;
 //
 
 // custom colors:
@@ -70,7 +71,6 @@ header {
         text-decoration: none;
         transition: 0.15s;
         color: $main-color-4;
-
         &:hover {
           color: $main-color-6;
           font-size: 27px;
@@ -102,6 +102,9 @@ header {
           &:hover {
             color: $main-color-7;
           }
+          &:active {
+            color: $main-color-10;
+          }
         }
       }
       .head-right-info-nav {
@@ -111,6 +114,9 @@ header {
           margin-left: 5px;
           &:hover {
             color: $main-color-6;
+          }
+          &:active {
+            color: $main-color-2;
           }
         }
       }
