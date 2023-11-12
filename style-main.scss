@@ -19,6 +19,7 @@ $main-color-9: #4e4e4e;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -120,7 +121,7 @@ header {
 //main
 
 main {
-  .home-screen {
+  .home-screen-box {
     .frame {
       padding: 4% 5%;
       display: flex;
@@ -215,7 +216,7 @@ main {
   }
   .h-text {
     display: flex;
-    padding: 2% 5%;
+    padding: 2% 5% 3%;
     h3 {
       font-family: "Noto Sans", sans-serif;
       font-size: 30px;
