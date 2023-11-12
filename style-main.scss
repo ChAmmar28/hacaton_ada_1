@@ -9,6 +9,8 @@ $main-color-7: #a33241;
 $main-color-8: #ac5b66;
 $main-color-9: #4e4e4e;
 $main-color-10: #72000f;
+$main-color-11: #c59e95;
+$main-color-12: #9d9d9d;
 //
 
 // custom colors:
@@ -140,7 +142,7 @@ main {
         .img {
           width: 93.5%;
           height: 95%;
-          background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+          background-image: url(./images/hs-img.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -277,4 +279,80 @@ main {
       }
     }
   }
+  .section-about-box {
+    padding: 4% 5%;
+    .h-text-about {
+      display: flex;
+      padding: 2% 0 3%;
+      h3 {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        border-bottom: $main-color-5 2px solid;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+    .about-info {
+      .about-bio {
+        display: flex;
+        justify-content: space-between;
+        .left-bio-text {
+          width: 58%;
+          div {
+            width: 100%;
+            background-color: $main-color-11;
+            padding: 30px 30px;
+            border-radius: 4px;
+            box-shadow: 0px 8px 8px $main-color-12;
+            h6 {
+              font-family: "Noto Sans", sans-serif;
+              font-size: 27px;
+              font-style: normal;
+              font-weight: 300;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
+            }
+            p {
+              font-family: "Noto Sans", sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 16px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+        .right-bio-text {
+          width: 38%;
+          div {
+            width: 100%;
+            background-color: $main-color-11;
+            padding: 30px 30px;
+            border-radius: 4px;
+            box-shadow: 0px 8px 8px $main-color-12;
+            h6 {
+              font-family: "Noto Sans", sans-serif;
+              font-size: 27px;
+              font-style: normal;
+              font-weight: 300;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
+            }
+            p {
+              font-family: "Noto Sans", sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 16px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+//

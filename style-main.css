@@ -115,7 +115,7 @@ main .home-screen-box .frame .moded-img {
 main .home-screen-box .frame .moded-img .img {
   width: 93.5%;
   height: 95%;
-  background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(./images/hs-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -239,6 +239,79 @@ main .section-label-box .label-box .skill-label .label-text h4 {
 }
 main .section-label-box .label-box .skill-label .label-text p {
   color: #6b6b6b;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+main .section-about-box {
+  padding: 4% 5%;
+}
+main .section-about-box .h-text-about {
+  display: flex;
+  padding: 2% 0 3%;
+}
+main .section-about-box .h-text-about h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  border-bottom: #ab857c 2px solid;
+}
+main .section-about-box .h-text-about h3 span {
+  font-weight: 500;
+}
+main .section-about-box .about-info .about-bio {
+  display: flex;
+  justify-content: space-between;
+}
+main .section-about-box .about-info .about-bio .left-bio-text {
+  width: 58%;
+}
+main .section-about-box .about-info .about-bio .left-bio-text div {
+  width: 100%;
+  background-color: #c59e95;
+  padding: 30px 30px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 8px #9d9d9d;
+}
+main .section-about-box .about-info .about-bio .left-bio-text div h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+main .section-about-box .about-info .about-bio .left-bio-text div p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+main .section-about-box .about-info .about-bio .right-bio-text {
+  width: 38%;
+}
+main .section-about-box .about-info .about-bio .right-bio-text div {
+  width: 100%;
+  background-color: #c59e95;
+  padding: 30px 30px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 8px #9d9d9d;
+}
+main .section-about-box .about-info .about-bio .right-bio-text div h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+main .section-about-box .about-info .about-bio .right-bio-text div p {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
