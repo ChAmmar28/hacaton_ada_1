@@ -11,7 +11,7 @@ a {
 
 header {
   padding: 1% 5%;
-  box-shadow: 0 0 6px #ab857c;
+  box-shadow: 0 0 6px #4e4e4e;
 }
 header .head {
   width: 100%;
@@ -427,6 +427,64 @@ main .section-portfolio-box .section-portfolio .works .work-text p {
 }
 main .section-portfolio-box .section-portfolio .works:nth-child(3) {
   flex-direction: row;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  padding: 3% 5%;
+  background-color: rgba(197, 158, 149, 0.7215686275);
+}
+footer .h-text {
+  display: flex;
+  margin-bottom: 2%;
+}
+footer .h-text h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  border-bottom: #ab857c 2px solid;
+}
+footer .h-text h3 span {
+  font-weight: 500;
+}
+footer .contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact-div form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+footer .contact-div form p {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 2% 0 1%;
+}
+footer .contact-div form input {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: #6b6b6b;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+footer .contact-div form input:last-child {
+  height: 300px;
 }
 
 @media all and (min-width: 2450px) {
