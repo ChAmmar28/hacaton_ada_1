@@ -716,21 +716,23 @@ footer .contact-div .foot-bottom .phone a:active {
   header .head .head-nav a {
     margin: 0 8px;
   }
-  header .head .head-right-info .head-right-info-nav a {
-    font-size: 20px;
-    margin-right: 5px;
+  header .head .head-right-info .head-right-info-nav {
+    display: none;
   }
   header .head .burger {
-    display: block;
+    display: flex;
   }
   header .head .burger i {
     font-size: 27px;
     color: #353535;
   }
   header .head .burger:hover > .burger-nav {
-    width: 30%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+  }
+  header .head .burger:hover > .burger-nav a {
+    font-size: 18px;
+    margin: 0 0 0 5px;
   }
   main .home-screen-box .frame {
     flex-direction: column-reverse;

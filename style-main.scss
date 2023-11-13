@@ -849,22 +849,23 @@ footer {
       }
       .head-right-info {
         .head-right-info-nav {
-          a {
-            font-size: 20px;
-            margin-right: 5px;
-          }
+          display: none;
         }
       }
       .burger {
-        display: block;
+        display: flex;
+
         i {
           font-size: 27px;
           color: $main-color-6;
         }
         &:hover > .burger-nav {
-          width: 30%;
           display: flex;
-          flex-direction: column;
+          align-items: center;
+          a {
+            font-size: 18px;
+            margin: 0 0 0 5px;
+          }
         }
       }
     }
