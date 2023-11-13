@@ -382,8 +382,6 @@ main .section-portfolio-box {
   overflow: hidden;
 }
 main .section-portfolio-box .section-portfolio {
-  flex-direction: column;
-  align-items: center;
   margin: 4% 0 1%;
 }
 main .section-portfolio-box .section-portfolio .work-givers {
@@ -392,24 +390,22 @@ main .section-portfolio-box .section-portfolio .work-givers {
   margin-bottom: 4%;
 }
 main .section-portfolio-box .section-portfolio .work-givers img {
-  width: 90%;
+  width: 75%;
 }
 main .section-portfolio-box .section-portfolio .works {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 5%;
-  width: 90%;
 }
 main .section-portfolio-box .section-portfolio .works img {
   height: 100%;
-  width: 100%;
+  width: 48%;
   border-radius: 4px;
 }
 main .section-portfolio-box .section-portfolio .works .work-text {
-  width: 100%;
-  margin: 0 5%;
+  width: 48%;
 }
 main .section-portfolio-box .section-portfolio .works .work-text h6 {
   font-family: "Inter", sans-serif;
@@ -433,6 +429,53 @@ main .section-portfolio-box .section-portfolio .works:nth-child(3) {
   flex-direction: row;
 }
 
+@media all and (min-width: 2450px) {
+  main .section-label-box .label-box .skill-label {
+    margin-top: 5.5%;
+  }
+  main .section-about-box .h-text-about {
+    margin-top: 0;
+  }
+  main .section-about-box .about-info .about-bio {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text {
+    width: 64%;
+    height: 100%;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text div {
+    width: 100%;
+    height: 100%;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text {
+    height: 100%;
+    width: 35%;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text div {
+    width: 100%;
+    height: 100%;
+  }
+  main .section-about-box .about-info .about-gallery {
+    margin-top: 1%;
+  }
+  main .section-about-box .about-info .about-gallery div {
+    width: 32.7%;
+  }
+  main .section-portfolio-box .section-portfolio .work-givers {
+    margin-bottom: 2%;
+  }
+  main .section-portfolio-box .section-portfolio .work-givers img {
+    width: 35%;
+  }
+  main .section-portfolio-box .section-portfolio .works {
+    padding: 3% 5%;
+  }
+  main .section-portfolio-box .section-portfolio .works .work-text {
+    max-width: 800px;
+  }
+}
 @media all and (max-width: 1220px) {
   header .head .head-left-info .cool-text {
     display: none;
@@ -455,6 +498,9 @@ main .section-portfolio-box .section-portfolio .works:nth-child(3) {
   }
   main .section-label-box .label-box .skill-label {
     margin-top: 3%;
+  }
+  main .section-about-box .about-info .about-bio {
+    width: 100%;
   }
   main .section-about-box .about-info .about-bio .left-bio-text {
     width: 59%;
@@ -483,6 +529,11 @@ main .section-portfolio-box .section-portfolio .works:nth-child(3) {
   }
 }
 @media all and (max-width: 1180px) {
+  main .section-portfolio-box .section-portfolio .works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   main .section-portfolio-box .section-portfolio .works .work-text p {
     letter-spacing: 0px;
     font-size: 16px;
@@ -519,19 +570,30 @@ main .section-portfolio-box .section-portfolio .works:nth-child(3) {
     font-size: 14px;
   }
 }
-@media all and (max-width: 775px) {
-  main .home-screen-box .frame .frame-text h3 {
-    font-size: 20px;
+@media all and (max-width: 800px) {
+  .section-label-box .label-box .skill-label {
+    width: 90%;
   }
-  main .home-screen-box .frame .frame-text h2 {
-    font-size: 38px;
-    margin: 4px 0 2px;
+  .section-about-box .about-info .about-bio {
+    flex-direction: column;
+    align-items: center;
   }
-  main .home-screen-box .frame .frame-text p {
-    font-size: 14px;
+  .section-about-box .about-info .about-bio .left-bio-text {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .section-about-box .about-info .about-bio .right-bio-text {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .section-about-box .about-info .about-gallery {
+    margin-top: 5%;
+  }
+  .section-about-box .about-info .about-gallery div:hover > p {
+    font-size: 15px;
   }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 775px) {
   header .head .head-left-info img {
     margin: 2% 0 2% -8%;
   }

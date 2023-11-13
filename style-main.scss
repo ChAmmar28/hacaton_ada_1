@@ -414,33 +414,29 @@ main {
     margin: 2% 0;
     overflow: hidden;
     .section-portfolio {
-      flex-direction: column;
-      align-items: center;
       margin: 4% 0 1%;
       .work-givers {
         display: flex;
         justify-content: center;
         margin-bottom: 4%;
         img {
-          width: 90%;
+          width: 75%;
         }
       }
       .works {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-
         padding: 5%;
-        width: 90%;
         img {
           height: 100%;
-          width: 100%;
+          width: 48%;
           border-radius: 4px;
         }
         .work-text {
-          width: 100%;
-          margin: 0 5%;
+          width: 48%;
+
           h6 {
             font-family: "Inter", sans-serif;
             font-size: 21px;
@@ -463,6 +459,69 @@ main {
       }
       .works:nth-child(3) {
         flex-direction: row;
+      }
+    }
+  }
+}
+
+// adaptive
+@media all and (min-width: 2450px) {
+  main {
+    .section-label-box {
+      .label-box {
+        .skill-label {
+          margin-top: 5.5%;
+        }
+      }
+    }
+    .section-about-box {
+      .h-text-about {
+        margin-top: 0;
+      }
+      .about-info {
+        .about-bio {
+          display: flex;
+          justify-content: space-between;
+          height: 200px;
+          .left-bio-text {
+            width: 64%;
+            height: 100%;
+            div {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .right-bio-text {
+            height: 100%;
+            width: 35%;
+            div {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .about-gallery {
+          margin-top: 1%;
+          div {
+            width: 32.7%;
+          }
+        }
+      }
+    }
+    .section-portfolio-box {
+      .section-portfolio {
+        .work-givers {
+          margin-bottom: 2%;
+          img {
+            width: 35%;
+          }
+        }
+        .works {
+          padding: 3% 5%;
+          .work-text {
+            max-width: 800px;
+          }
+        }
       }
     }
   }
@@ -508,6 +567,7 @@ main {
     .section-about-box {
       .about-info {
         .about-bio {
+          width: 100%;
           .left-bio-text {
             width: 59%;
             height: 100%;
@@ -547,6 +607,9 @@ main {
     .section-portfolio-box {
       .section-portfolio {
         .works {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           .work-text {
             p {
               letter-spacing: 0px;
@@ -619,27 +682,40 @@ main {
     }
   }
 }
-@media all and (max-width: 775px) {
-  main {
-    .home-screen-box {
-      .frame {
-        .frame-text {
-          h3 {
-            font-size: 20px;
-          }
-          h2 {
-            font-size: 38px;
-            margin: 4px 0 2px;
-          }
-          p {
-            font-size: 14px;
+@media all and (max-width: 800px) {
+  .section-label-box {
+    .label-box {
+      .skill-label {
+        width: 90%;
+      }
+    }
+  }
+  .section-about-box {
+    .about-info {
+      .about-bio {
+        flex-direction: column;
+        align-items: center;
+        .left-bio-text {
+          margin-top: 5%;
+          width: 100%;
+        }
+        .right-bio-text {
+          margin-top: 5%;
+          width: 100%;
+        }
+      }
+      .about-gallery {
+        margin-top: 5%;
+        div {
+          &:hover > p {
+            font-size: 15px;
           }
         }
       }
     }
   }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 775px) {
   header {
     .head {
       .head-left-info {
@@ -738,4 +814,104 @@ main {
       }
     }
   }
+}
+@media all and (max-width: 375px) {
+  // header {
+  //   .head {
+  //     .head-left-info {
+  //       img {
+  //         margin: 2% 0 2% -8%;
+  //       }
+  //     }
+  //     .head-nav {
+  //       display: none;
+  //       margin-right: 0;
+  //       a {
+  //         margin: 0 8px;
+  //       }
+  //     }
+  //     .head-right-info {
+  //       .head-right-info-nav {
+  //         a {
+  //           font-size: 20px;
+  //           margin-right: 5px;
+  //         }
+  //       }
+  //     }
+  //     .burger {
+  //       display: block;
+  //       i {
+  //         font-size: 27px;
+  //         color: $main-color-6;
+  //       }
+  //     }
+  //   }
+  // }
+  // main {
+  //   .home-screen-box {
+  //     .frame {
+  //       flex-wrap: wrap-reverse;
+  //       .frame-text {
+  //         margin: 5% 0;
+  //         width: 100%;
+  //       }
+  //     }
+  //     .tag-box {
+  //       flex-direction: column;
+  //       align-items: center;
+  //       .tag {
+  //         width: 90%;
+  //         p {
+  //           letter-spacing: 0;
+  //           font-size: 11px;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   .section-label-box {
+  //     .label-box {
+  //       .skill-label {
+  //         width: 90%;
+  //       }
+  //     }
+  //   }
+  //   .section-about-box {
+  //     .about-info {
+  //       .about-bio {
+  //         flex-direction: column;
+  //         .left-bio-text {
+  //           margin-top: 5%;
+  //           width: 100%;
+  //         }
+  //         .right-bio-text {
+  //           margin-top: 5%;
+  //           width: 100%;
+  //         }
+  //       }
+  //       .about-gallery {
+  //         margin-top: 5%;
+  //         div {
+  //           &:hover > p {
+  //             font-size: 15px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   .section-portfolio-box {
+  //     .section-portfolio {
+  //       .works {
+  //         flex-direction: column-reverse;
+  //         width: 100%;
+  //         align-items: center;
+  //         h6 {
+  //           margin-top: 10%;
+  //         }
+  //       }
+  //       .works:nth-child(3) {
+  //         flex-direction: column-reverse;
+  //       }
+  //     }
+  //   }
+  // }
 }
