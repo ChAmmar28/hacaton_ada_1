@@ -854,11 +854,13 @@ footer {
       }
       .burger {
         display: flex;
-
-        i {
-          font-size: 27px;
-          color: $main-color-6;
+        a {
+          i {
+            font-size: 27px;
+            color: $main-color-6;
+          }
         }
+
         &:hover > .burger-nav {
           display: flex;
           align-items: center;
@@ -1023,3 +1025,4 @@ footer {
     }
   }
 }
+// v2 final config Ammar

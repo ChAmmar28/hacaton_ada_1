@@ -722,7 +722,7 @@ footer .contact-div .foot-bottom .phone a:active {
   header .head .burger {
     display: flex;
   }
-  header .head .burger i {
+  header .head .burger a i {
     font-size: 27px;
     color: #353535;
   }
