@@ -103,6 +103,30 @@ header .head .head-right-info .head-right-info-nav a:active {
 header .head .burger {
   display: none;
 }
+header .head .burger .burger-nav {
+  display: none;
+}
+header .head .burger .burger-nav a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.15s;
+  color: #6b6b6b;
+}
+header .head .burger .burger-nav a:hover {
+  color: #353535;
+  font-size: 22px;
+  border-bottom: #ab857c 2px solid;
+}
+header .head .burger .burger-nav a:hover span {
+  font-weight: 500;
+  color: #000;
+}
+header .head .burger .burger-nav a:active {
+  color: #000;
+}
 
 main .home-screen-box .frame {
   padding: 4% 5%;
@@ -274,6 +298,7 @@ main .section-about-box .about-info .about-bio {
   justify-content: space-between;
 }
 main .section-about-box .about-info .about-bio .left-bio-text {
+  height: 100%;
   width: 58%;
 }
 main .section-about-box .about-info .about-bio .left-bio-text div {
@@ -302,6 +327,7 @@ main .section-about-box .about-info .about-bio .left-bio-text div p {
 }
 main .section-about-box .about-info .about-bio .right-bio-text {
   width: 38%;
+  height: 100%;
 }
 main .section-about-box .about-info .about-bio .right-bio-text div {
   width: 100%;
@@ -425,22 +451,18 @@ main .section-portfolio-box .section-portfolio .works .work-text p {
   color: #353535;
   letter-spacing: 1px;
 }
-main .section-portfolio-box .section-portfolio .works:nth-child(3) {
+main .section-portfolio-box .section-portfolio div:nth-child(3) {
   flex-direction: row;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 footer {
-  padding: 3% 5%;
-  background-color: rgba(197, 158, 149, 0.7215686275);
+  background-color: #d1b09a;
+  padding-top: 2%;
 }
 footer .h-text {
   display: flex;
-  margin-bottom: 2%;
+  margin: 2% 0;
+  padding: 0 5%;
 }
 footer .h-text h3 {
   font-family: "Noto Sans", sans-serif;
@@ -484,7 +506,50 @@ footer .contact-div form input {
   letter-spacing: 1px;
 }
 footer .contact-div form input:last-child {
-  height: 300px;
+  padding-bottom: 50%;
+}
+footer .contact-div form button {
+  width: 25%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 1% 0;
+  margin-top: 2.5%;
+  align-self: end;
+  color: #fff;
+  background-color: #960418;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+footer .contact-div form button:hover {
+  background-color: #8a0012;
+}
+footer .contact-div form button:active {
+  background-color: #72000f;
+}
+footer .contact-div .foot-bottom {
+  width: 100%;
+  margin-top: 3%;
+  padding: 5%;
+  background-color: #bd9377;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .contact-div .foot-bottom .icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .contact-div .foot-bottom .icons a {
+  color: #4e4e4e;
+}
+footer .contact-div .foot-bottom .icons a:hover {
+  color: #353535;
+}
+footer .contact-div .foot-bottom .icons a:active {
+  color: #000;
 }
 
 @media all and (min-width: 2450px) {
@@ -498,22 +563,6 @@ footer .contact-div form input:last-child {
     display: flex;
     justify-content: space-between;
     height: 200px;
-  }
-  main .section-about-box .about-info .about-bio .left-bio-text {
-    width: 64%;
-    height: 100%;
-  }
-  main .section-about-box .about-info .about-bio .left-bio-text div {
-    width: 100%;
-    height: 100%;
-  }
-  main .section-about-box .about-info .about-bio .right-bio-text {
-    height: 100%;
-    width: 35%;
-  }
-  main .section-about-box .about-info .about-bio .right-bio-text div {
-    width: 100%;
-    height: 100%;
   }
   main .section-about-box .about-info .about-gallery {
     margin-top: 1%;
@@ -560,24 +609,6 @@ footer .contact-div form input:last-child {
   main .section-about-box .about-info .about-bio {
     width: 100%;
   }
-  main .section-about-box .about-info .about-bio .left-bio-text {
-    width: 59%;
-    height: 100%;
-  }
-  main .section-about-box .about-info .about-bio .left-bio-text div p {
-    line-height: normal;
-    letter-spacing: 0px;
-    font-size: 14px;
-  }
-  main .section-about-box .about-info .about-bio .right-bio-text {
-    width: 39%;
-    height: 100%;
-  }
-  main .section-about-box .about-info .about-bio .right-bio-text div p {
-    line-height: normal;
-    letter-spacing: 0px;
-    font-size: 14px;
-  }
   main .section-about-box .about-info .about-gallery {
     margin-top: 2%;
   }
@@ -587,36 +618,9 @@ footer .contact-div form input:last-child {
   }
 }
 @media all and (max-width: 1180px) {
-  main .section-portfolio-box .section-portfolio .works {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   main .section-portfolio-box .section-portfolio .works .work-text p {
     letter-spacing: 0px;
     font-size: 16px;
-  }
-  main .section-about-box .about-info .about-bio .left-bio-text {
-    width: 59%;
-  }
-  main .section-about-box .about-info .about-bio .left-bio-text div p {
-    line-height: normal;
-    letter-spacing: 0px;
-    font-size: 14px;
-  }
-  main .section-about-box .about-info .about-bio .right-bio-text {
-    width: 39%;
-  }
-  main .section-about-box .about-info .about-bio .right-bio-text div p {
-    line-height: normal;
-    letter-spacing: 0px;
-    font-size: 14px;
-  }
-}
-@media all and (max-width: 1180px) {
-  main .section-portfolio-box .section-portfolio .works .work-text p {
-    letter-spacing: 0px;
-    font-size: 14px;
   }
 }
 @media all and (max-width: 1070px) {
@@ -629,29 +633,59 @@ footer .contact-div form input:last-child {
   }
 }
 @media all and (max-width: 800px) {
-  .section-label-box .label-box .skill-label {
+  main .home-screen-box .frame .frame-text h3 {
+    font-size: 22px;
+  }
+  main .home-screen-box .frame .frame-text h2 {
+    font-size: 23px;
+  }
+  main .section-label-box .label-box .skill-label {
     width: 90%;
   }
-  .section-about-box .about-info .about-bio {
+  main .section-about-box .about-info .about-bio {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  .section-about-box .about-info .about-bio .left-bio-text {
+  main .section-about-box .about-info .about-bio .left-bio-text {
+    width: 100%;
     margin-top: 5%;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text div p {
+    line-height: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text {
+    margin-top: 2%;
     width: 100%;
   }
-  .section-about-box .about-info .about-bio .right-bio-text {
-    margin-top: 5%;
+  main .section-about-box .about-info .about-bio .right-bio-text div p {
+    line-height: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main .section-portfolio-box .section-portfolio .works {
+    flex-direction: column-reverse;
     width: 100%;
   }
-  .section-about-box .about-info .about-gallery {
-    margin-top: 5%;
+  main .section-portfolio-box .section-portfolio .works img {
+    width: 90%;
   }
-  .section-about-box .about-info .about-gallery div:hover > p {
-    font-size: 15px;
+  main .section-portfolio-box .section-portfolio .works .work-text {
+    margin-top: 5%;
+    width: 90%;
+  }
+  main .section-portfolio-box .section-portfolio div:nth-child(3) {
+    flex-direction: column-reverse;
   }
 }
-@media all and (max-width: 775px) {
+@media all and (max-width: 700px) {
+  main .home-screen-box .frame .frame-text p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 650px) {
   header .head .head-left-info img {
     margin: 2% 0 2% -8%;
   }
@@ -673,6 +707,76 @@ footer .contact-div form input:last-child {
     font-size: 27px;
     color: #353535;
   }
+  header .head .burger:hover > .burger-nav {
+    display: block;
+  }
+  main .home-screen-box .frame {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .home-screen-box .frame .moded-img {
+    width: 90%;
+  }
+  main .home-screen-box .frame .moded-img .img {
+    width: 90%;
+  }
+  main .home-screen-box .frame .moded-img .sqeare-border {
+    width: 90%;
+  }
+  main .home-screen-box .frame .frame-text {
+    margin: 5% 0;
+    width: 80%;
+  }
+  main .home-screen-box .frame .frame-text h3 {
+    font-size: 20px;
+  }
+  main .home-screen-box .frame .frame-text h2 {
+    font-size: 30px;
+  }
+  main .home-screen-box .tag-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .home-screen-box .tag-box .tag {
+    width: 90%;
+  }
+  main .home-screen-box .tag-box .tag p {
+    letter-spacing: 0;
+    font-size: 11px;
+  }
+  main .section-label-box .label-box .skill-label {
+    width: 90%;
+  }
+  main .section-about-box .about-info .about-bio {
+    flex-direction: column;
+  }
+  main .section-about-box .about-info .about-bio .left-bio-text {
+    margin-top: 3%;
+    width: 100%;
+  }
+  main .section-about-box .about-info .about-bio .right-bio-text {
+    margin-top: 3%;
+    width: 100%;
+  }
+  main .section-about-box .about-info .about-gallery {
+    margin-top: 3%;
+  }
+  main .section-about-box .about-info .about-gallery div:hover > p {
+    font-size: 15px;
+  }
+  main .section-portfolio-box .section-portfolio .works {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  main .section-portfolio-box .section-portfolio .works h6 {
+    margin-top: 10%;
+  }
+  main .section-portfolio-box .section-portfolio .works:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+}
+@media all and (max-width: 375px) {
   main .home-screen-box .frame {
     flex-wrap: wrap-reverse;
   }

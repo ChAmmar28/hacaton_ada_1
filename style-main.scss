@@ -13,6 +13,10 @@ $main-color-11: #c59e95;
 $main-color-12: #9d9d9d;
 $main-color-13: #c59e95b8;
 $main-color-14: #c6c6c6;
+$main-color-15: #960418;
+$main-color-16: #8a0012;
+$main-color-17: #d1b09a;
+$main-color-18: #bd9377;
 // custom colors:
 $b-r-4px: 10px;
 // default style
@@ -123,6 +127,30 @@ header {
     }
     .burger {
       display: none;
+      .burger-nav {
+        display: none;
+        a {
+          font-family: "Noto Sans", sans-serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          text-decoration: none;
+          transition: 0.15s;
+          color: $main-color-4;
+          &:hover {
+            color: $main-color-6;
+            font-size: 22px;
+            border-bottom: $main-color-5 2px solid;
+            span {
+              font-weight: 500;
+              color: $main-color-2;
+            }
+          }
+          &:active {
+            color: $main-color-2;
+          }
+        }
+      }
     }
   }
 }
@@ -304,6 +332,7 @@ main {
         display: flex;
         justify-content: space-between;
         .left-bio-text {
+          height: 100%;
           width: 58%;
           div {
             width: 100%;
@@ -332,6 +361,7 @@ main {
         }
         .right-bio-text {
           width: 38%;
+          height: 100%;
           div {
             width: 100%;
             background-color: $main-color-1;
@@ -457,7 +487,7 @@ main {
           }
         }
       }
-      .works:nth-child(3) {
+      div:nth-child(3) {
         flex-direction: row;
       }
     }
@@ -465,16 +495,13 @@ main {
 }
 // foot
 
-* {
-  padding: 0;
-  margin: 0;
-}
 footer {
-  padding: 3% 5%;
-  background-color: $main-color-13;
+  background-color: $main-color-17;
+  padding-top: 2%;
   .h-text {
     display: flex;
-    margin-bottom: 2%;
+    margin: 2% 0;
+    padding: 0 5%;
     h3 {
       font-family: "Noto Sans", sans-serif;
       font-size: 30px;
@@ -516,7 +543,50 @@ footer {
         letter-spacing: 1px;
       }
       input:last-child {
-        height: 300px;
+        padding-bottom: 50%;
+      }
+      button {
+        width: 25%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        padding: 1% 0;
+        margin-top: 2.5%;
+        align-self: end;
+        color: $main-color-3;
+        background-color: $main-color-15;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        &:hover {
+          background-color: $main-color-16;
+        }
+        &:active {
+          background-color: $main-color-10;
+        }
+      }
+    }
+    .foot-bottom {
+      width: 100%;
+      margin-top: 3%;
+      padding: 5%;
+      background-color: $main-color-18;
+      display: flex;
+      justify-content: space-evenly;
+      .icons {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        a {
+          color: $main-color-9;
+          &:hover {
+            color: $main-color-6;
+          }
+          &:active {
+            color: $main-color-2;
+          }
+        }
       }
     }
   }
@@ -541,22 +611,6 @@ footer {
           display: flex;
           justify-content: space-between;
           height: 200px;
-          .left-bio-text {
-            width: 64%;
-            height: 100%;
-            div {
-              width: 100%;
-              height: 100%;
-            }
-          }
-          .right-bio-text {
-            height: 100%;
-            width: 35%;
-            div {
-              width: 100%;
-              height: 100%;
-            }
-          }
         }
         .about-gallery {
           margin-top: 1%;
@@ -626,28 +680,6 @@ footer {
       .about-info {
         .about-bio {
           width: 100%;
-          .left-bio-text {
-            width: 59%;
-            height: 100%;
-            div {
-              p {
-                line-height: normal;
-                letter-spacing: 0px;
-                font-size: 14px;
-              }
-            }
-          }
-          .right-bio-text {
-            width: 39%;
-            height: 100%;
-            div {
-              p {
-                line-height: normal;
-                letter-spacing: 0px;
-                font-size: 14px;
-              }
-            }
-          }
         }
         .about-gallery {
           margin-top: 2%;
@@ -665,55 +697,10 @@ footer {
     .section-portfolio-box {
       .section-portfolio {
         .works {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           .work-text {
             p {
               letter-spacing: 0px;
               font-size: 16px;
-            }
-          }
-        }
-      }
-    }
-    .section-about-box {
-      .about-info {
-        .about-bio {
-          .left-bio-text {
-            width: 59%;
-            div {
-              p {
-                line-height: normal;
-                letter-spacing: 0px;
-                font-size: 14px;
-              }
-            }
-          }
-          .right-bio-text {
-            width: 39%;
-            div {
-              p {
-                line-height: normal;
-                letter-spacing: 0px;
-                font-size: 14px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media all and (max-width: 1180px) {
-  main {
-    .section-portfolio-box {
-      .section-portfolio {
-        .works {
-          .work-text {
-            p {
-              letter-spacing: 0px;
-              font-size: 14px;
             }
           }
         }
@@ -741,39 +728,91 @@ footer {
   }
 }
 @media all and (max-width: 800px) {
-  .section-label-box {
-    .label-box {
-      .skill-label {
-        width: 90%;
+  main {
+    .home-screen-box {
+      .frame {
+        .frame-text {
+          h3 {
+            font-size: 22px;
+          }
+          h2 {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    .section-label-box {
+      .label-box {
+        .skill-label {
+          width: 90%;
+        }
+      }
+    }
+    .section-about-box {
+      .about-info {
+        .about-bio {
+          display: flex;
+          flex-direction: column;
+          .left-bio-text {
+            width: 100%;
+            margin-top: 5%;
+            div {
+              p {
+                line-height: normal;
+                letter-spacing: 0px;
+                font-size: 14px;
+              }
+            }
+          }
+          .right-bio-text {
+            margin-top: 2%;
+            width: 100%;
+            div {
+              p {
+                line-height: normal;
+                letter-spacing: 0px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-portfolio-box {
+      .section-portfolio {
+        .works {
+          flex-direction: column-reverse;
+          width: 100%;
+          img {
+            width: 90%;
+          }
+          .work-text {
+            margin-top: 5%;
+            width: 90%;
+          }
+        }
+        div:nth-child(3) {
+          flex-direction: column-reverse;
+        }
       }
     }
   }
-  .section-about-box {
-    .about-info {
-      .about-bio {
-        flex-direction: column;
-        align-items: center;
-        .left-bio-text {
-          margin-top: 5%;
-          width: 100%;
-        }
-        .right-bio-text {
-          margin-top: 5%;
-          width: 100%;
-        }
-      }
-      .about-gallery {
-        margin-top: 5%;
-        div {
-          &:hover > p {
-            font-size: 15px;
+}
+@media all and (max-width: 700px) {
+  main {
+    .home-screen-box {
+      .frame {
+        .frame-text {
+          p {
+            font-size: 14px;
+            letter-spacing: 0;
           }
         }
       }
     }
   }
 }
-@media all and (max-width: 775px) {
+@media all and (max-width: 650px) {
   header {
     .head {
       .head-left-info {
@@ -802,9 +841,97 @@ footer {
           font-size: 27px;
           color: $main-color-6;
         }
+        &:hover > .burger-nav {
+          display: block;
+        }
       }
     }
   }
+  main {
+    .home-screen-box {
+      .frame {
+        flex-direction: column-reverse;
+        align-items: center;
+        .moded-img {
+          width: 90%;
+          .img {
+            width: 90%;
+          }
+          .sqeare-border {
+            width: 90%;
+          }
+        }
+        .frame-text {
+          margin: 5% 0;
+          width: 80%;
+          h3 {
+            font-size: 20px;
+          }
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+      .tag-box {
+        flex-direction: column;
+        align-items: center;
+        .tag {
+          width: 90%;
+          p {
+            letter-spacing: 0;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .section-label-box {
+      .label-box {
+        .skill-label {
+          width: 90%;
+        }
+      }
+    }
+    .section-about-box {
+      .about-info {
+        .about-bio {
+          flex-direction: column;
+          .left-bio-text {
+            margin-top: 3%;
+            width: 100%;
+          }
+          .right-bio-text {
+            margin-top: 3%;
+            width: 100%;
+          }
+        }
+        .about-gallery {
+          margin-top: 3%;
+          div {
+            &:hover > p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .section-portfolio-box {
+      .section-portfolio {
+        .works {
+          flex-direction: column-reverse;
+          width: 100%;
+          align-items: center;
+          h6 {
+            margin-top: 10%;
+          }
+        }
+        .works:nth-child(3) {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 375px) {
   main {
     .home-screen-box {
       .frame {
@@ -872,104 +999,4 @@ footer {
       }
     }
   }
-}
-@media all and (max-width: 375px) {
-  // header {
-  //   .head {
-  //     .head-left-info {
-  //       img {
-  //         margin: 2% 0 2% -8%;
-  //       }
-  //     }
-  //     .head-nav {
-  //       display: none;
-  //       margin-right: 0;
-  //       a {
-  //         margin: 0 8px;
-  //       }
-  //     }
-  //     .head-right-info {
-  //       .head-right-info-nav {
-  //         a {
-  //           font-size: 20px;
-  //           margin-right: 5px;
-  //         }
-  //       }
-  //     }
-  //     .burger {
-  //       display: block;
-  //       i {
-  //         font-size: 27px;
-  //         color: $main-color-6;
-  //       }
-  //     }
-  //   }
-  // }
-  // main {
-  //   .home-screen-box {
-  //     .frame {
-  //       flex-wrap: wrap-reverse;
-  //       .frame-text {
-  //         margin: 5% 0;
-  //         width: 100%;
-  //       }
-  //     }
-  //     .tag-box {
-  //       flex-direction: column;
-  //       align-items: center;
-  //       .tag {
-  //         width: 90%;
-  //         p {
-  //           letter-spacing: 0;
-  //           font-size: 11px;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .section-label-box {
-  //     .label-box {
-  //       .skill-label {
-  //         width: 90%;
-  //       }
-  //     }
-  //   }
-  //   .section-about-box {
-  //     .about-info {
-  //       .about-bio {
-  //         flex-direction: column;
-  //         .left-bio-text {
-  //           margin-top: 5%;
-  //           width: 100%;
-  //         }
-  //         .right-bio-text {
-  //           margin-top: 5%;
-  //           width: 100%;
-  //         }
-  //       }
-  //       .about-gallery {
-  //         margin-top: 5%;
-  //         div {
-  //           &:hover > p {
-  //             font-size: 15px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .section-portfolio-box {
-  //     .section-portfolio {
-  //       .works {
-  //         flex-direction: column-reverse;
-  //         width: 100%;
-  //         align-items: center;
-  //         h6 {
-  //           margin-top: 10%;
-  //         }
-  //       }
-  //       .works:nth-child(3) {
-  //         flex-direction: column-reverse;
-  //       }
-  //     }
-  //   }
-  // }
 }
