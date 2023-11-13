@@ -535,20 +535,40 @@ footer .contact-div .foot-bottom {
   padding: 5%;
   background-color: #bd9377;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 footer .contact-div .foot-bottom .icons {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
 footer .contact-div .foot-bottom .icons a {
+  font-size: 20px;
   color: #4e4e4e;
 }
 footer .contact-div .foot-bottom .icons a:hover {
   color: #353535;
 }
 footer .contact-div .foot-bottom .icons a:active {
+  color: #000;
+}
+footer .contact-div .foot-bottom .phone {
+  margin-top: 3%;
+}
+footer .contact-div .foot-bottom .phone a {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 2% 0 1%;
+  color: #4e4e4e;
+}
+footer .contact-div .foot-bottom .phone a:hover {
+  color: #353535;
+}
+footer .contact-div .foot-bottom .phone a:active {
   color: #000;
 }
 
@@ -708,7 +728,9 @@ footer .contact-div .foot-bottom .icons a:active {
     color: #353535;
   }
   header .head .burger:hover > .burger-nav {
-    display: block;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
   }
   main .home-screen-box .frame {
     flex-direction: column-reverse;
