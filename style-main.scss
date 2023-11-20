@@ -854,7 +854,9 @@ footer {
       }
       .burger {
         display: flex;
+        flex-direction: row-reverse;
         a {
+          margin-left: 5%;
           i {
             font-size: 27px;
             color: $main-color-6;

@@ -721,6 +721,10 @@ footer .contact-div .foot-bottom .phone a:active {
   }
   header .head .burger {
     display: flex;
+    flex-direction: row-reverse;
+  }
+  header .head .burger a {
+    margin-left: 5%;
   }
   header .head .burger a i {
     font-size: 27px;
