@@ -855,14 +855,11 @@ footer {
       .burger {
         display: flex;
         flex-direction: row-reverse;
-        a {
+        i {
           margin-left: 5%;
-          i {
-            font-size: 27px;
-            color: $main-color-6;
-          }
+          font-size: 27px;
+          color: $main-color-6;
         }
-
         &:hover > .burger-nav {
           display: flex;
           align-items: center;
